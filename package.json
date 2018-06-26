@@ -1,0 +1,24 @@
+{
+  "name": "snow-fall",
+  "version": "1.0.0",
+  "description": "snow-fall plugins",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --colors",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.config.js --watch --colors",
+    "test": "tslint -p ./ ./src/**/*.ts ./src/**/*.tsx"
+  },
+  "author": "HouraisanKaguya",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.19",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.0.0",
+    "eslint-loader": "^2.0.0",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
